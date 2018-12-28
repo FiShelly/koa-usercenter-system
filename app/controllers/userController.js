@@ -203,7 +203,7 @@ const remove = async function (ctx) {
     const params = ctx.params;
     try {
         const user = await userService.findOne({id: params.id});
-        if (user.dataValues.account === 'fishelly.') {
+        if (user.dataValues.id === 1) {
             return packData(403, 'error', 'can-not-delete-fishelly');
         }
         const image = await userService.delete({id: params.id});
