@@ -46,7 +46,8 @@
     "start": "nodemon ./src/index.js",
     "dev": "webpack --config webpack.config.js --watch",
     "serve": "node build/app.js",
-    "build": "webpack --config webpack.build.js"
+    "build": "webpack --config webpack.build.js",
+    "start:prod": "pm2 start ./build/app.js"
   },
   "author": "Fishelly",
   "license": "MIT"
