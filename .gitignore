@@ -29,3 +29,5 @@ uploads/
 config/database.config.js
 config/server.config.js
 
+build/*
+
