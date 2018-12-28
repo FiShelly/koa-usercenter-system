@@ -3,7 +3,7 @@ import { userController } from '../../controllers';
 
 const router = koaRouter();
 
-router.post('/login', async function (ctx, next) {
+router.get('/login', async function (ctx, next) {
     ctx.body = await userController.userInfo(ctx);
 });
 

@@ -8,7 +8,7 @@ const deepClone = normalUtil.deepClone;
 const redirectData = normalUtil.redirectData;
 
 const userInfo = async function (ctx) {
-    const request = ctx.request.body;
+    const request = ctx.request.query;
     const tmpToken = request.access_token;
     if (!tmpToken) {
         return packData(412, 'error', 'access-token-empty');
