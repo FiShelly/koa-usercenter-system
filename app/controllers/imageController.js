@@ -17,7 +17,6 @@ const create = async function(ctx, file) {
         const image = await imageService.create(request);
         return packData(200, 'success', image);
     } catch (e) {
-        console.log(e);
         ctx.logger.getLogger('error').error(e);
         return packData(500, 'error', 'mysql-error');
     }

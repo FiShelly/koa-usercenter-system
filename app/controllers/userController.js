@@ -38,7 +38,6 @@ const logined = async function (ctx) {
             return redirectData(412, '/error', 'input-invalidate-empty');
         }
     } catch (e) {
-        console.log(e);
         ctx.logger.getLogger('error').error(e);
         return redirectData(500, '/error', 'mysql-error');
     }
@@ -78,7 +77,6 @@ const checkLogin = async function (ctx) {
             return packData(401.1, 'error', 'login-invalidate');
         }
     } catch (e) {
-        console.log(e);
         ctx.logger.getLogger('error').error(e);
         return packData(500, 'error', 'mysql-error');
     }

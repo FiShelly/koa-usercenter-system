@@ -39,7 +39,6 @@ const updateUserApp = async function (ctx) {
         });
         return packData(200, 'success', userApp);
     } catch (e) {
-        console.log(e);
         ctx.logger.getLogger('error').error(e);
         return packData(500, 'error', 'mysql-error');
     }
