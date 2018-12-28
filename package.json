@@ -45,7 +45,7 @@
   "scripts": {
     "start": "nodemon ./src/index.js",
     "dev": "webpack --config webpack.config.js --watch",
-    "dev:serve": "node build/app.js",
+    "serve": "node build/app.js",
     "build": "webpack --config webpack.build.js"
   },
   "author": "Fishelly",

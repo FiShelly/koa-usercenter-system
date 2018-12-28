@@ -7,7 +7,7 @@ module.exports = {
         app: [
             // 如果polyfill放在这里，打包的时候将不会被external,必须在js里require才能有效external
             // 'babel-polyfill',
-            './app/app.js',
+            './bin/www',
             // './test/testUserApp.js'
         ],
     },
